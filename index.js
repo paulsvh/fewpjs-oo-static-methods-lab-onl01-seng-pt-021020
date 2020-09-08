@@ -9,7 +9,23 @@ class Formatter {
   }
 
   static titleize(string){
-
+    let nonCapitalized = [ 'the', 'a', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from' ]
+    let result = []
+    let splitString = string.split(" ")
+    for (let i=0; i < splitString.length; i++){
+      if (i === 0) {
+        result.push(this.capitalize(splitString[i]))
+      }
+      else {
+        if (nonCapitalized.includes(splitString[i])){
+          result.push(splitString[n])
+        }
+        else {
+          result.push(this.capitalize(splitString[i]))
+        }
+      }
+    }
+    
   }
 
 }
