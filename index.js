@@ -5,11 +5,11 @@ class Formatter {
   }
 
   static sanitize(string){
-    
+
   }
 
   static titleize(string){
-    
+
   }
 
 }
