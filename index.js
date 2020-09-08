@@ -18,7 +18,7 @@ class Formatter {
       }
       else {
         if (nonCapitalized.includes(splitString[i])){
-          result.push(splitString[n])
+          result.push(splitString[i])
         }
         else {
           result.push(this.capitalize(splitString[i]))
